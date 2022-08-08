@@ -4,7 +4,7 @@ import { StatContainer,StatList,ListItem,StatTitle  } from 'components/statistic
 const Statistics = ({ title, stats=[] }) => {
     return (
         <StatContainer>
-            <StatTitle>{title}</StatTitle>
+            {title&&(<StatTitle>{title}</StatTitle>)}
 
             <StatList >
                 {stats.map(item => (
